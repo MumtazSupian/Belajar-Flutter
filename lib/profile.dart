@@ -11,6 +11,13 @@ class DetailProfilePage extends StatelessWidget {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.black87,
+        leading: const Padding(
+          padding: EdgeInsets.only(left: 12),
+          child: CircleAvatar(
+            radius: 20,
+            backgroundImage: AssetImage("assets/der.jpg"), // ganti dengan fotomu
+          ),
+        ),
         title: Text(
           "Profile Detail",
           style: GoogleFonts.poppins(
