@@ -57,9 +57,9 @@ class DetailProfilePage extends StatelessWidget {
                   spacing: 8,
                   runSpacing: 8,
                   children: [
-                    _skillChip("Flutter"),
-                    _skillChip("HTML"),
-                    _skillChip("CSS"),
+                    _skillChip("Flutter", Icons.flutter_dash),
+                    _skillChip("HTML", Icons.code),
+                    _skillChip("CSS", Icons.style),
                   ],
                 ),
               ),
@@ -126,8 +126,10 @@ class DetailProfilePage extends StatelessWidget {
     );
   }
 
-  Widget _skillChip(String label) {
+  // Ubah method _skillChip agar menerima icon
+  Widget _skillChip(String label, IconData icon) {
     return Chip(
+      avatar: Icon(icon, color: Colors.blueGrey, size: 20),
       label: Text(
         label,
         style: GoogleFonts.poppins(

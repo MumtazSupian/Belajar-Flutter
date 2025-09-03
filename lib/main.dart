@@ -58,7 +58,7 @@ class ProfilePage extends StatelessWidget {
                   "Muhammad \n Mumtaz Supian",
                   style: const TextStyle(
                     fontSize: 28,
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),
                   textAlign: TextAlign.center,
@@ -77,6 +77,7 @@ class ProfilePage extends StatelessWidget {
                       child: Text(
                         "Vocational High School \nStudent at Wikrama Bogor",
                         style: TextStyle(
+                          fontWeight: FontWeight.bold,
                           fontSize: 14,
                           color: Colors.white,
                         ),
